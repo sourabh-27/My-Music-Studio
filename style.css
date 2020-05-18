@@ -1,0 +1,50 @@
+/*body resetting*/
+body{
+    margin: 0px;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+body::-webkit-scrollbar { 
+    display: none; 
+}
+
+/*background*/
+html{
+	background-color: #0C1027;
+}
+
+/*header of website*/
+#header-web{
+	color: white;
+	position: relative;
+	padding-bottom: 100px;
+}
+
+
+.no-list-style{
+    list-style: none;
+}
+
+.no-list-style li {
+    font-weight: 100;
+    font-size: 0.9rem;
+}
+
+.no-list-style li a{
+    list-style: none;
+    color: white;
+    text-decoration: none;
+}
+
+.horizontal-list li{
+	display: inline-block;
+	margin: 0px 8px 8px 0px;
+    font-weight: 100;
+    font-size: 0.9rem;
+}
+
+#image-resize img{
+	height: 3rem;
+	width: 3rem;
+}
