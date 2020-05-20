@@ -1,50 +1,85 @@
-/*body resetting*/
-body{
+* {
     margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0C1027;
     font-family: sans-serif;
-    font-size: 30px;
 }
 
-body::-webkit-scrollbar { 
-    display: none; 
-}
-
-/*background*/
-html{
-	background-color: #0C1027;
-}
-
-/*header of website*/
-#header-web{
-	color: white;
-	position: relative;
-	padding-bottom: 100px;
-}
-
-
-.no-list-style{
-    list-style: none;
-}
-
-.no-list-style li {
-    font-weight: 100;
-    font-size: 0.9rem;
-}
-
-.no-list-style li a{
-    list-style: none;
+nav {
+    display: flex;
+    flex-direction: row;
     color: white;
-    text-decoration: none;
+    position: fixed;
+    top:0px;
+    width: 100%;
+    height: auto;
 }
 
-.horizontal-list li{
-	display: inline-block;
-	margin: 0px 8px 8px 0px;
-    font-weight: 100;
-    font-size: 0.9rem;
+nav > div {
+
+    width: 10%;
+    padding: 1%;
+    height: auto;
 }
 
-#image-resize img{
-	height: 3rem;
-	width: 3rem;
+.icon img{
+    max-width: 3rem;
+}
+
+#name span{
+	position: relative;
+	top: 28%;
+	left: -80%;
+}
+
+.favourites {
+    width: auto;
+}
+
+.favourites span {
+    position: relative;
+    top: 22%;
+    font-size: 1.5rem;
+}
+
+.search {
+    margin-left: auto;
+    width:100%;
+}
+
+.search input {
+    position: relative;
+    right: 2px;
+    top: 28%;
+    left: 40%;
+    height: 70%;
+    border: none;
+    border-radius: 25px;
+    background-color: #12193E;
+    width: 15rem;
+}
+
+::placeholder{
+	color: white;
+	text-align: left;
+	padding: 0 0 0 0.4rem;
+	font-size: 1.1rem;
+}
+
+.bell-icon  {
+    padding-top: 1.8rem;
+    font-size: 2rem; 
+    padding-right: 10rem;  
+}
+.profile-pic  {
+    font-size: 2rem;
+    padding-top: 1.8rem;
+
+}
+.profile-pic i { 
+    color: linear-gradient(to top right ,rgba(4, 4, 95, 0.2) 2%,rgba(66, 8, 66, 0.2) );
 }
