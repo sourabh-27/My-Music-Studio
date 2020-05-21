@@ -2,12 +2,26 @@
     margin: 0px;
     padding:0px;
     box-sizing: border-box;
+    color: white;
 }
 
 body {
     background-color: #0C1027;
     font-family: sans-serif;
 }
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header{
+	height: 12vh;
+    margin-bottom: 2rem;
+}
+
+/*Navbar properties*/
 
 nav {
     display: flex;
@@ -82,4 +96,117 @@ nav > div {
 }
 .profile-pic i { 
     color: linear-gradient(to top right ,rgba(4, 4, 95, 0.2) 2%,rgba(66, 8, 66, 0.2) );
+}
+
+/*Main container*/
+#container{
+	display: flex;
+	width: 100%;
+}
+
+#container main{
+	width: 70%;
+	/*border: 2px solid yellow;*/
+	margin: 0rem 1rem;
+}
+
+#container aside{
+	width: 30%;
+	/*border: 2px solid red;*/
+	margin: 0rem 1rem;
+}
+
+
+
+/*Aside*/
+.queue-container{
+	display: flex;
+	margin-bottom: 2.1rem;
+}
+#aside-section{
+	display:flex;
+}
+#aside-heading{
+	color: white;
+	font-size: 1.3rem;
+}
+
+#queue-link a{
+	text-decoration: none;
+	color: #43BAA4;
+	/*float: left;*/
+}
+#queue-link i{
+	color: #43BAA4;
+}
+#queue-link{
+	margin-left: auto;
+	margin-right: 2rem;
+	margin-top: auto;
+	/*margin-bottom: 2rem;*/
+}
+
+#queue-list{
+	margin-left: 0.7rem;
+	margin-top: 2rem;
+}
+
+#queue-list div{
+	display: flex;
+	flex-direction: row;
+}
+
+.image-thumbnail img{
+	height: 3rem;
+	width: 3rem;
+	margin-right: 1rem;
+	box-shadow: 0px 0px 6px 2px white;
+	border-radius: 7px;
+}
+
+.song-number{
+	margin-top: 1rem;
+	margin-right: 1rem;
+	color: #8598A4;
+}
+
+.song-name{
+	margin-top: 0.3rem;
+/*	display: flex;
+	justify-content: flex-start;*/
+}
+
+.song-details{
+	display: flex;
+}
+
+.singer-name{
+	position: relative;
+	margin-top: 1.4rem;
+	font-size: 0.9rem;
+	color: #9C9FA8;
+	left: -2.5rem;
+}
+
+.heart-icon{
+	margin-top: 0.7rem;
+	margin-right: 3rem;
+	margin-left: auto;
+}
+
+.heart-icon i{
+	color: #90A5B0;
+}
+
+
+
+/*Main section images*/
+#images-floating{
+	display: flex;
+}
+
+#images-floating img{
+	height: 20rem;
+	width: 20rem;
+	margin: 0.3rem 0.3rem 0.3rem 0.3rem;
 }
