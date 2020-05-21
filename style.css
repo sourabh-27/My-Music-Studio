@@ -203,10 +203,23 @@ nav > div {
 /*Main section images*/
 #images-floating{
 	display: flex;
+	justify-content: center;
 }
 
-#images-floating img{
+.scale-image{
 	height: 20rem;
 	width: 20rem;
+}
+.scale-image img{
+	height: 90%;
+	width: 90%;
 	margin: 0.3rem 0.3rem 0.3rem 0.3rem;
+	transition: 0.2s ease-in-out;
+}
+
+.scale-image:hover{
+	transform-scale(1.5);
+/*	height: 97%;
+	width: 97%;*/
+	/*border-radius: 50%;*/
 }
