@@ -214,12 +214,102 @@ nav > div {
 	height: 90%;
 	width: 90%;
 	margin: 0.3rem 0.3rem 0.3rem 0.3rem;
+	border-radius: 4px;
 	transition: 0.2s ease-in-out;
 }
 
-.scale-image:hover{
-	transform-scale(1.5);
+.scale-image:hover img{
+	transform: scale(1.1);
 /*	height: 97%;
 	width: 97%;*/
 	/*border-radius: 50%;*/
+}
+
+/*Main section latest release*/
+#latest-release{
+	margin-top: 1.2rem;
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+#latest-heading{
+	color: white;
+	font-size: 1.2rem;
+	margin-left: 2.5rem;
+	position: absolute;
+}
+
+.latest-song{
+	margin: 2rem 1rem;
+	margin-left: 2.5rem;
+	width: 37%;
+	/*border: 2px solid red;*/
+	display: flex;
+}
+
+.latest-song-thumbnail img{
+	height: 5.4rem;
+	width: 5rem;
+	margin-top: 0.8rem;
+}
+
+.latest-song-name{
+	margin-top: 2rem;
+	margin-left: 1rem;
+}
+
+.new-song-name{
+	font-weight: 300;
+	margin-bottom: 0.3rem;
+}
+
+.release-date{
+	color: #9C9FA8;
+}
+
+.three-dots{
+	margin-top: 0.4rem;
+	margin-left: 8.5rem;
+}
+.three-dots i{
+	color: #93A8B3;
+}
+
+.time-duration{
+	color: #9C9FA8;
+	margin-left: 8.2rem;
+	margin-top: 0.2rem;
+	font-size: 0.8rem;
+}
+
+/*Main section Popular artists */
+.popular-artists{
+	display: flex;
+	flex-direction: row;
+}
+
+.singer-profile-pic{
+	display: inline-block;
+	height: 11rem;
+	width: 11rem;
+	justify-content: space-between;
+}
+
+.artist-image{
+	height: 11rem;
+	width: 11rem;
+}
+
+.artist-image img{
+	height: 11rem;
+	width: 11.5rem;
+	border-radius: 50%;
+	margin-left: 2rem;
+	margin-top: 2rem;
+}
+
+.artist-name{
+	margin-left: 5.3rem;
+	margin-top: 2.4rem;
 }
