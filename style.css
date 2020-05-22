@@ -163,6 +163,37 @@ nav > div {
 	margin-top: auto;
 	/*margin-bottom: 2rem;*/
 }
+.queue-dropdown{
+	position: fixed;
+	height: 3rem;
+	width: 10rem;
+	background-color: white;
+	right: 4rem;
+	margin-top: 2rem;
+	display: flex;
+	flex-direction: column;
+}
+
+#queue-value{
+	height: 2rem;
+	width: 100%;
+	/*border: 2px solid red;*/
+}
+
+#queue-value span{
+	color: #353338; 
+	font-weight: 560;
+	text-align: center;
+	font-size: 0.86rem;
+	justify-content: center;
+	margin-left: 0.4rem;
+}
+
+hr{
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
 
 #queue-list{
 	margin-left: 0.7rem;
@@ -294,22 +325,47 @@ nav > div {
 	color: #93A8B3;
 }
 
+.three-dots:hover ~ .drop-down-menu{
+	display: block;
+}
+
+.drop-down-menu:hover ~.drop-down-menu{
+	display: block;
+}
+
 .drop-down-menu{
-	height: 10rem;
-	width: 8rem;
+	position: fixed;
+	z-index: 1rem;
+	height: 8rem;
+	width: 10rem;
 	background-color: white;
 	display: flex;
 	flex-direction: column;
+	display: none;
 }
 
 .icon-and-use{
-	border: 2px solid red;
-	height: 3rem;
+	display: flex;
+	/*border: 2px solid red;*/
+	height: 2rem;
 	width: 100%;
 }
 
-#play-button i{
-	color: grey;
+#dropdown-button{
+	position: relative;
+	top: 0.3rem;
+	left: 0.3rem;
+}
+#dropdown-button i{
+	color: #8F8BB0;
+}
+
+.icon-use{
+	color: #353338;
+	font-size: 0.9rem;
+	font-weight: 580;
+	margin-top: 0.3rem;
+	margin-left: 0.7rem;
 }
 
 .time-duration{
