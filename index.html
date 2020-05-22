@@ -6,8 +6,9 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
-<body>
+<body style="padding-top:50px">
 	<div id="wrapper">
 		<header>
 			<nav>
@@ -57,8 +58,23 @@
 						</div>
 						<div id="drop-down">
 							<div class="three-dots">
-								<i class="fas fa-ellipsis-h"></i>
+								<a href="#">
+									<i class="fas fa-ellipsis-h"></i>
+								</a>
 							</div>
+						<!-- 	<div class="drop-down-menu">
+								<div class="icon-and-use">
+									<span id="play-button">
+										<i class="fas fa-play"></i>
+									</span>
+								</div>
+								<div class="icon-and-use">
+								</div>
+								<div class="icon-and-use">
+								</div>
+								<div class="icon-and-use">
+								</div>
+							</div> -->
 							<div class="time-duration">
 								4:44
 							</div>
@@ -600,14 +616,81 @@
 							<i class="far fa-heart"></i>
 						</div>
 					</div>
-					
+
 				</div>
 			</aside>
 		</div>
 	</div>
 
 	<footer>
-		
+		<div class="music-player">
+			<div id="song-image">
+				<img src="images/player/player.JPG">
+			</div>
+			<div id="name-and-singerName">
+				<div id="name-song">
+					Imagine by J Carter
+				</div>
+				<div id="name-singer">
+					John Lennon
+				</div>
+			</div>
+
+			<div class="player-icons">
+				<i class="far fa-heart"></i>
+				<i class="fas fa-ban"></i>
+			</div>
+
+			<div class="main-player">
+				<div class="player-buttons">
+					<span id="random">
+						<i class="fas fa-random"></i>
+					</span>
+					<span id="step-backward">
+						<i class="fas fa-step-backward"></i>
+					</span>
+					<span id="pause">
+						<i class="far fa-pause-circle"></i>
+					</span>
+					<span id="step-forward">
+						<i class="fas fa-step-forward"></i>
+					</span>
+					<span id="repeat">
+						<i class="fas fa-redo"></i>
+					</span>
+				</div>
+
+				<div class="slider-details">
+					<div id="at-time">
+						1:43
+					</div>
+					<div class="slider">
+						<div id="breakpoint">
+							<i class="fas fa-circle"></i>
+						</div>
+					</div>
+					<div id="length-song">
+						4:44
+					</div>
+				</div>
+			</div>
+
+			<div class="volume-and-expand">
+				<span>
+					<i class="fas fa-volume-up"></i>
+				</span>
+				<div class="slider-details2">
+					<div class="slider2">
+						<div id="breakpoint2">
+							<i class="fas fa-circle"></i>
+						</div>
+					</div>
+				</div>
+				<span id="expand">
+					<i class="fas fa-arrows-alt-v"></i>
+				</span>
+			</div>
+		</div>
 	</footer>
 </body>
 </html>
