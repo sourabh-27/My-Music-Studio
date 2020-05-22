@@ -286,6 +286,7 @@ nav > div {
 /*Main section Popular artists */
 .popular-artists{
 	display: flex;
+	width: 100%;
 	flex-direction: row;
 }
 
@@ -312,4 +313,112 @@ nav > div {
 .artist-name{
 	margin-left: 5.3rem;
 	margin-top: 2.4rem;
+}
+
+
+/*Station bar*/
+.stations{
+	display: flex;
+	background-color: #101642;
+	width: 100%;
+	margin-top: 3rem;
+	margin-left: 2.5rem;
+	height: 12.2rem;
+	/*height: auto;*/
+	/*width: 20rem;*/
+	/*border-color: red;*/
+}
+
+#station-header-container{
+	height: 10rem;
+	width: 10rem;
+	/*border: 2px solid red;*/
+}
+#station-header{
+	height: 5rem;
+	width: 12rem;
+	background-color: #F9D64C;
+	margin-left: 2rem;
+	margin-top: 3.4rem;
+}
+
+#station-inner-header{
+	position: relative;
+	height: 7rem;
+	width: 10.6rem;
+	background-color: #F0BC10;
+	margin-left: 0.68rem;
+	top: -1rem;
+}
+
+#main-station-header{
+	position: relative;
+	height: 9rem;
+	width: 9.3rem;
+	background-color: #FF4F0A;
+	margin-left: 0.7rem;
+	top: -0.8rem;
+}
+
+#main-station-header div{
+	text-align: center;
+	justify-content: center;
+	/*margin-top: 50%;*/
+}
+
+#main-station-header i{
+	margin-top: 26%;
+	font-size: 2rem;
+}
+
+#station-text{
+	font-size: 1.4rem;
+	margin-top: 0.4rem;
+}
+
+#music-type-image{
+	margin-left: -1.8rem;
+	margin-top: 1.3rem;
+	transform: scale(0.8);
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+
+/*Music type*/
+.mood-type{
+	display: flex;
+	margin-left: 2.5rem;
+	justify-content: space-between;
+	/*flex-wrap: wrap;*/
+	margin-top: 3rem;
+	width: 100%;
+}
+
+#mood-type-image{
+	/*border: 2px solid red;*/
+	height: 14rem;
+	width: 32%;
+	overflow: hidden;
+}
+
+#mood-type-image img{
+	opacity: 0.7;
+	filter: brightness(1);
+	height: 100%;
+	width: 100%;
+	transition: 0.5s ease-in-out;
+}
+
+.text-over-img{
+	position: relative;
+	top: -8.2rem;
+	left: 8.5rem;
+	font-size: 1.8rem;
+	letter-spacing: 0.1rem;
+	font-weight: 500;
+}
+
+#mood-type-image img:hover{
+	transform: scale(1.3);
 }
