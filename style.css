@@ -8,7 +8,6 @@
 body {
     background-color: #0C1027;
     font-family: sans-serif;
-
 }
 
 .wrapper {
@@ -307,6 +306,21 @@ hr{
 	margin-top: 0.8rem;
 }
 
+.latest-play-button{
+	position: relative;
+	left: -3.2rem;
+	top: -2.2rem;
+	visibility: hidden;
+}
+
+.latest-song-thumbnail:hover img{
+	opacity: 0.65;
+}
+
+.latest-song-thumbnail:hover .latest-play-button{
+	visibility: visible;
+}
+
 .latest-song-name{
 	margin-top: 2rem;
 	margin-left: 1rem;
@@ -401,7 +415,7 @@ hr{
 }
 
 .artist-image img:hover ~ .play-icon-artist{
-	display: block;
+	visibility: visible;
 }
 
 .artist-image img:hover{
@@ -409,11 +423,7 @@ hr{
 }
 
 .play-icon-artist:hover{
-	display: block;
-}
-
-.play-icon-artist:hover ~ .artist-image img{
-	opacity: 0.5;
+	visibility: visible;
 }
 
 .play-icon-artist{
@@ -421,7 +431,7 @@ hr{
 	top: 6.5rem;
 	left: -5.8rem;
 	font-size: 1.5rem;
-	display: none;
+	visibility: hidden;
 }
 
 .artist-image img{
@@ -606,7 +616,7 @@ footer {
   	color: white;
   	text-align: center;
   	height: 4.5rem;
-  	display: none;
+  	/*display: none;*/
 }
 
 .music-player{
@@ -911,6 +921,8 @@ footer {
 	background-color: #141B41;
 }
 
+
+/*Margin Classes*/
 .mb2{
 	margin-top: 0.4rem;
 }
