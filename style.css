@@ -408,8 +408,12 @@ hr{
 	opacity: 0.5;
 }
 
-.play-icon-artist i:hover ~ .play-icon-artist{
+.play-icon-artist:hover{
 	display: block;
+}
+
+.play-icon-artist:hover ~ .artist-image img{
+	opacity: 0.5;
 }
 
 .play-icon-artist{
