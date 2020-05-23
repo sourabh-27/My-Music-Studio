@@ -338,10 +338,11 @@ hr{
 }
 
 .drop-down-menu{
-	position: fixed;
+	position: absolute;
 	z-index: 1rem;
 	height: 8rem;
 	width: 10rem;
+	/*top: -0rem;*/
 	background-color: white;
 	display: flex;
 	flex-direction: column;
@@ -396,6 +397,27 @@ hr{
 .artist-image{
 	height: 11rem;
 	width: 11rem;
+	display: flex;
+}
+
+.artist-image img:hover ~ .play-icon-artist{
+	display: block;
+}
+
+.artist-image img:hover{
+	opacity: 0.5;
+}
+
+.play-icon-artist i:hover ~ .play-icon-artist{
+	display: block;
+}
+
+.play-icon-artist{
+	position: relative;
+	top: 6.5rem;
+	left: -5.8rem;
+	font-size: 1.5rem;
+	display: none;
 }
 
 .artist-image img{
@@ -747,4 +769,164 @@ footer {
 	color: #B3B3B3;
 	font-size: 1.4rem;
 	transform: rotate(40deg);
+}
+
+
+
+
+
+/*Styling for Single Playlist Screen*/
+
+/*Aside*/
+.queue-list2{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+	/*border: 2px solid red;*/
+	margin-top: 1.7rem;
+}
+
+.artist-pic img{
+	height: 5rem;
+	width: 5rem;
+	box-shadow: 0px 0px 6px 2px white;
+}
+
+.artist-details2{
+	color: white;
+	margin-left: 1rem;
+	margin-top: 1.3rem;
+}
+
+#artist-name2{
+	font-weight: 700;
+}
+
+#song-type2{
+	margin-top: 0.5rem;
+	color: #777A86;
+	font-weight: 600;
+}
+
+
+/*Main Container 2*/
+.about-artist2{
+	/*position: relative;*/
+	height: 22.6rem;
+	width: 93%;
+	margin-top: 0.4rem;
+	display: flex;
+	/*border: 2px solid yellow;*/
+	margin-left: 2.5rem;
+	background-color: #141B41;
+}
+
+.about-artist2 img{
+	height: 100%;
+	width: 34%;
+}
+
+.details2{
+	height: 100%;
+	width: 100%;
+	/*border: 2px solid yellow;*/
+}
+
+.band-name{
+	margin-left: 2rem;
+	margin-top: 3rem;
+	height: 3rem;
+	width: 100%;
+	/*margin: 2px solid red;*/
+}
+
+#band-name2{
+	color: white;
+	font-size: 2rem;
+	font-weight: 700;
+}
+
+#band-type{
+	color: #84889B;
+	font-size: 1.2rem;
+}
+
+#followers{
+	color: #84889B;
+	margin-left: 20rem;
+}
+
+#about-band p{
+	margin-top: 1.6rem;
+	color: #84889B;
+	text-align: justify;
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+#play-button2{
+	height: 2.4rem;
+	width: 8rem;
+	display: inline-block;
+	/*border: 2px solid red;*/
+	background-image: linear-gradient(to right, #2C229A, #BF47DE);
+}
+
+#play-button2 span{
+	position: relative;
+	left: 2.2rem;
+	top: 0.6rem;
+	letter-spacing: 0.08rem;
+}
+.play-all{
+	margin-left: 2rem;
+	margin-top: 2rem;
+}
+
+#follow{
+	position: relative;
+	margin-left: 5rem;
+	color: white;
+}
+
+#tracks{
+	position: absolute;
+	color: white;
+	margin-top: 0.7rem;
+	font-size: 0.87rem;
+}
+
+.song-details2{
+	height: 4rem;
+	width: 93%;
+	margin-top: 0.7rem;
+	display: flex;
+	/*border: 2px solid yellow;*/
+	margin-left: 2.5rem;
+	background-color: #141B41;
+}
+
+.mb2{
+	margin-top: 0.4rem;
+}
+.mb2 img{
+	box-shadow: none;
+}
+
+.mbleft2{
+	margin-left: 0.4rem;
+}
+
+.mb3{
+	margin-top: 1.1rem;
+}
+.mb3 i{
+	font-size: 1.4rem;
+	margin-right: 0.5rem;
+}
+
+.mb10{
+	position: relative;
+	margin-top: 2rem;
 }
