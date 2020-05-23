@@ -163,6 +163,10 @@ nav > div {
 	margin-top: auto;
 	/*margin-bottom: 2rem;*/
 }
+
+#queue-link:hover ~ .queue-dropdown{
+	display: flex;
+}
 .queue-dropdown{
 	position: fixed;
 	height: 3rem;
@@ -170,8 +174,8 @@ nav > div {
 	background-color: white;
 	right: 4rem;
 	margin-top: 2rem;
-	display: flex;
 	flex-direction: column;
+	display: none;
 }
 
 #queue-value{
