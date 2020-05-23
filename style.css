@@ -320,13 +320,26 @@ hr{
 	visibility: visible;
 }
 
-.latest-song-thumbnail:hover #audio1{
+.aud1:hover #audio1{
+	visibility: visible;
+}
+
+.aud2:hover #audio2{
 	visibility: visible;
 }
 
 #audio1{ /*Added audio on hover*/
 	position: absolute;
 	left: 3rem;
+	/*border: 2px solid red;*/
+	outline: none;
+	top: 35rem;
+	visibility: hidden;
+}
+
+#audio2{
+	position: absolute;
+	left: 31rem;
 	/*border: 2px solid red;*/
 	outline: none;
 	top: 35rem;
