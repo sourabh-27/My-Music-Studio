@@ -456,6 +456,8 @@ hr{
 	top: 6.5rem;
 	left: -5.8rem;
 	font-size: 1.5rem;
+	/*border: 2px solid red;*/
+	height: 2rem;
 	visibility: hidden;
 }
 
